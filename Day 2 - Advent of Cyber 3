@@ -1,0 +1,27 @@
+Advent of Cyber 3 - Day 2 {Web Exploitation - Elf HR Problems}
+
+Cookie Manipulation
+
+Open the static site, and try to create an account. You will receive an error, but will still get a cookie to manipulate.
+Right Click - Inspect Element, then go to "Storage" to see and edit it.
+
+Question 1: What is the name of the new cookie that was created for your account?
+{{Hint: It is under "Name" in storage}}
+
+Question 2: What encoding type was used for the cookie value?
+{{Hint: copy the cookie value to https://gchq.github.io/CyberChef/ and look at the output}}
+
+Question 3: What object format is the data of the cookie stored in?
+{{Hint: Analyze the output from CyberChef again if you're unsure}}
+
+Question 4: What is the value of the administrator cookie? (username = admin)
+{{Hint: Copy the output from CyberChef, and change the value of username to admin.
+Paste to the input field, and drag "To Hex" over into recipe, with "none" selected under Delimiter. Shake...and BAKE!}}
+
+Question 5: What team environment is not responding?
+{{Hint: Red icon}}
+
+Question 6: What team environment has a network warning?
+{{Hint: Yellow icon}}
+
+Question 7 && 8: No Answer Needed
