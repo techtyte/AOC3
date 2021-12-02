@@ -7,15 +7,15 @@ There is a user_id parameter in the url, which should read user_id=11 initially.
 We will be changing the value of this to find the other accounts, due to the IDOR vulnerability
 
 Question 1: After finding Santa's account, what is their position in the company?
-{{hint: user_id=1}}
+{{Hint: user_id=1}}
 
 Question 2: After finding McStocker's account, what is their position in the company?
-{{hint: user_id=3}}
+{{Hint: user_id=3}}
 
 Question 3: After finding the account responsible for tampering, what is their position in the company?
-{{user_id=9}}
+{{Hint: user_id=9}}
 
 Question 4: What is the received flag when McSkidy fixes the Inventory Management System?
-{{Click "Revert" under the Actions tab of the Grinch's account}}
+{{Hint: Click "Revert" under the Actions tab of the Grinch's account}}
 
 Question 5 && 6: No Answer Needed
