@@ -2,7 +2,7 @@ Advent of Cyber 3 - Day 3 {Web Exploitation - Christmas Blackout}
 
 Content Discovery
 
-Question 1: Using a common wordlist for discovering content, enumerate http://10.10.32.38 to find
+Question 1: Using a common wordlist for discovering content, enumerate http://[MACHINE IP] to find
 the location of the administrator dashboard. What is the name of the folder?
 {{Hint: Gobuster syntax: gobuster dir -u [MACHINE IP] -w /usr/share/wordlists/dirb/common.txt -t 250
 --OR--
