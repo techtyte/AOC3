@@ -1,10 +1,10 @@
 Advent of Cyber 3 - Day 1 {Web Exploitation - Save the Gifts}
 
-IDOR (Insecure Direct Object Reference) vulnerability.
+IDOR (Insecure Direct Object Reference)
 
 Once the site is opened, click on "Your Activity" at the top.
 There is a user_id parameter in the url, which should read user_id=11 initially.
-We will be changing the value of this to find the other accounts, due to the IDOR vulnerability
+We will be changing the value of this to find the other accounts.
 
 Question 1: After finding Santa's account, what is their position in the company?
 {{Hint: user_id=1}}
