@@ -1,0 +1,16 @@
+Advent of Cyber 3 - Day 3 {Web Exploitation - Christmas Blackout}
+
+Content Discovery
+
+Question 1: Using a common wordlist for discovering content, enumerate http://10.10.32.38 to find
+the location of the administrator dashboard. What is the name of the folder?
+{{Hint: Gobuster syntax: gobuster dir -u 10.10.32.38 -w /usr/share/wordlists/dirb/common.txt -t 250
+--OR--
+Dirb syntax: dirb http://10.10.32.38 /usr/share/wordlists/dirb/common.txt}}
+
+Question 2: In your web browser, try some default credentials on the newly discovered login form for 
+the "administrator" user. What is the password?
+{{The answer is in the task}}
+
+Question 3: Access the admin panel. What is the value of the flag?
+{{Answer's on the panel}}
