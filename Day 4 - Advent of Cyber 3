@@ -6,14 +6,14 @@ Fuzzing with Burpsuite
 -Make sure your proxy is configured and intercept is on.
 
 Question 1: What valid password can you use to access the "santa" account?
-{{Steps:
-1. With intercept on, fill out the login form with username santa and any password, and press submit. 
-2. With your newly intercepted request in burpsuite, right click and select "Send to Intruder".
-3. Go to the Positions tab and press "Clear". Highlight the password you entered into the form
+{{Steps:}}
+{1} With intercept on, fill out the login form with username santa and any password, and press submit. 
+{2} With your newly intercepted request in burpsuite, right click and select "Send to Intruder".
+{3} Go to the Positions tab and press "Clear". Highlight the password you entered into the form
 and press "Add". (Attack type should be set to Sniper as well if it is not already).
-4. Go to the Payload tab, and make sure Payload type is set to "Simple List". Go down one
+{4} Go to the Payload tab, and make sure Payload type is set to "Simple List". Go down one
 to Payload Options, and press Load. Select the wordlist that's included in the task.
-5. Go back to the Target tab and press "Start Attack"
-6. Sort by Length, and look for the one that is different from the others. That is the correct password.
-7. Make sure to turn intercept off before trying to login! The flag is 
-revealed on the itinerary.
+{5} Go back to the Target tab and press "Start Attack"
+{6} Sort by Length, and look for the one that is different from the others. That is the correct password.
+{7} Make sure to turn intercept off before trying to login! The flag is 
+revealed in the itinerary.
