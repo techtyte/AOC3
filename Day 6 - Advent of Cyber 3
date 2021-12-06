@@ -16,7 +16,7 @@ Save the output to a text file.
 Question 4: Now that you read the index.php, there is a login credential PHP file's path. Use the PHP filter technique to read its content. 
 What are the username and password?
 {Hint: err=php://filter/convert.base64-encode/resource=./includes/creds.php
-Decode}
+Decode with above method or online converter}
 
 Question 5: Use the credentials to login into the web application. Help McSkidy to recover the server's password. 
 What is the password of the flag.thm.aoc server? 
