@@ -9,4 +9,14 @@ Question 1: Interact with the MongoDB server to find the flag. What is the flag?
 > show collections
 > db.flagColl.find()
 
-Question 2: We discussed how to bypass login pages as an admin. Can you log into the application that Grinch Enterprise controls as admin and retrieve the flag?
+Question 2: We discussed how to bypass login pages as an admin. Can you log into the application that Grinch Enterprise 
+controls as admin and retrieve the flag?
+{{Hint: Fill out login form with username "admin" and any password.
+Intercept the request with burp, and add [$ne] (not equals) after "password".
+Forward the request.}}
+
+Question 3: Once you are logged in, use the gift search page to list all usernames that have guest roles. What is the flag?
+{{Hint: search?username[$ne]=xyz&role=guest}}
+
+Question 4: Use the gift search page to perform NoSQL injection and retrieve the mcskidy record. What is the details record?
+{{Hint: search?username=mcskidy&role[$ne]=user}}
