@@ -1,0 +1,12 @@
+Advent of Cyber 3 - Day 7 {Web Exploitation - Migration Without Security}
+
+NoSQL (Non SQL and Not Only SQL) Injection
+
+Question 1: Interact with the MongoDB server to find the flag. What is the flag?
+{{Hint:}} 
+> show databases
+> use flagdb
+> show collections
+> db.flagColl.find()
+
+Question 2: We discussed how to bypass login pages as an admin. Can you log into the application that Grinch Enterprise controls as admin and retrieve the flag?
