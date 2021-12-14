@@ -1,4 +1,5 @@
 Advent of Cyber 3 - Day 3 {Web Exploitation - Christmas Blackout}
+///////Hints ++ Answers at the bottom///////
 
 Content Discovery
 
@@ -16,3 +17,11 @@ the "administrator" user. What is the password?
 
 Question 3: Access the admin panel. What is the value of the flag?
 {{Answer's on the panel}}
+
+
+
+
+///////Answers///////
+Question 1: admin
+Question 2: administrator
+Question 3: THM{ADM1N_AC3SS}
