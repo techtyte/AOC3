@@ -1,0 +1,32 @@
+Advent of Cyber 3 - Day 10 {Networking - Offensive Is The Best Defence}
+
+Nmap!
+
+{{This one is guided in the task!}}
+
+
+
+///////Answers///////
+Question 1:  Help McSkidy and run nmap -sT MACHINE_IP. How many ports are open between 1 and 100? 
+Answer: 2
+
+Question 2: What is the smallest port number that is open?
+Answer: 22
+
+Question 3: What is the service related to the highest port number you found in the first question?
+Answer: HTTP
+
+Question 4: Now run nmap -sS MACHINE_IP. Did you get the same results? (Y/N)
+Answer: Y
+
+Question 5: If you want Nmap to detect the version info of the services installed, you can use nmap -sV MACHINE_IP. What is the version number of the web server?
+Answer: Apache httpd 2.4.49
+
+Question 6: What is the CVE of the vulnerability that was solved in version 2.4.51?
+Answer: CVE-2021-42013
+
+Question 7: ......What is the port number that appeared in the results now?
+Answer: 20212
+
+Question 8: What is the name of the program listening on the newly discovered port?
+Answer: telnetd
