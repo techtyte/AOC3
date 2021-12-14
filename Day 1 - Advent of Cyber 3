@@ -1,10 +1,13 @@
 Advent of Cyber 3 - Day 1 {Web Exploitation - Save the Gifts}
+///////Hints ++ Answers at the bottom///////
 
 IDOR (Insecure Direct Object Reference)
 
 Once the site is opened, click on "Your Activity" at the top.
 There is a user_id parameter in the url, which should read user_id=11 initially.
 We will be changing the value of this to find the other accounts.
+
+///////Hints///////
 
 Question 1: After finding Santa's account, what is their position in the company?
 {{Hint: user_id=1}}
@@ -19,3 +22,13 @@ Question 4: What is the received flag when McSkidy fixes the Inventory Managemen
 {{Hint: Click "Revert" under the Actions tab of the Grinch's account}}
 
 Question 5 && 6: No Answer Needed
+
+
+
+
+///////Answers///////
+
+Question 1: The Boss!
+Question 2: Build Manager
+Question 3: Mischief Manager
+Question 4: THM{AOC_IDOR_2B34BHI3}
