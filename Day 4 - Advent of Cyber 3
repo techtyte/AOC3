@@ -1,4 +1,5 @@
 Advent of Cyber 3 - Day 4 {Web Exploitation - Santa's Running Behind}
+///////Hints ++ Answers at the bottom//////
 
 Fuzzing with Burpsuite
 
@@ -16,3 +17,8 @@ and press "Add". (Attack type should be set to Sniper as well if it is not alrea
 {6} Sort by Length, and look for the one that is different from the others. That is the correct password.
 {7} Make sure to turn intercept off before trying to login! The flag is 
 revealed in the itinerary.
+
+
+///////Answers///////
+Question 1: cookie
+Question 2: THM{SANTA_DELIVERS}
