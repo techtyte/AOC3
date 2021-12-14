@@ -3,3 +3,27 @@ Advent of Cyber 3 - Day 9 {Networking - Where Is All This Data Going}
 Wireshark - Packet Analysis
 
 {{This one is also already guided!}}
+
+
+
+///////Answers///////
+Question 1: In the HTTP #1 - GET requests section, which directory is found on the web server?
+Answer: login
+
+Question 2: What is the username and password used in the login page in the HTTP #2 - POST section? 
+Answer: McSkidy:Christmas2021!
+
+Question 3: What is the User-Agent's name that has been sent in HTTP #2 - POST section?
+Answer: TryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}
+
+Question 4: In the DNS section, there is a TXT DNS query. What is the flag in the message of that DNS query?
+Answer: THM{dd63a80bf9fdd21aabbf70af7438c257}
+
+Question 5: In the FTP section, what is the FTP login password?
+Answer: TryH@ckM3!
+
+Question 6: In the FTP section, what is the FTP command used to upload the secret.txt  file?
+Answer: STOR
+
+Question 7: In the FTP section, what is the content of the secret.txt file?
+Answer: 123^-^321
