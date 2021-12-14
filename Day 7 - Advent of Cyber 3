@@ -1,4 +1,6 @@
 Advent of Cyber 3 - Day 7 {Web Exploitation - Migration Without Security}
+///////Hints ++ Answers at the bottom///////
+
 
 NoSQL (Non SQL and Not Only SQL) Injection
 
@@ -20,3 +22,12 @@ Question 3: Once you are logged in, use the gift search page to list all usernam
 
 Question 4: Use the gift search page to perform NoSQL injection and retrieve the mcskidy record. What is the details record?
 {{Hint: search?username=mcskidy&role[$ne]=user}}
+
+
+
+
+///////Answers///////
+Question 1: THM{8814a5e6662a9763f7df23ee59d944f9}
+Question 2: THM{b6b304f5d5834a4d089b570840b467a8}
+Question 3: THM{2ec099f2d602cc4968c5267970be1326}
+Question 4: ID:6184f516ef6da50433f100f4:mcskidy:admin
