@@ -1,4 +1,5 @@
 Advent of Cyber 3 - Day 2 {Web Exploitation - Elf HR Problems}
+///////Hints ++ Answers at the bottom///////
 
 Cookie Manipulation
 
@@ -25,3 +26,13 @@ Question 6: What team environment has a network warning?
 {{Hint: Yellow icon}}
 
 Question 7 && 8: No Answer Needed
+
+
+
+///////Answers///////
+Question 1: user-auth
+Question 2: hexadecimal
+Question 3: JSON
+Question 4: 7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a2261646d696e227d
+Question 5: HR
+Question 6: Application
