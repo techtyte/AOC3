@@ -1,3 +1,39 @@
 Advent of Cyber 3 - Day 8 {Special by John Hammond - Santa's Bag of Toys}
 
 {{The task walks you through this one!}}
+
+
+
+///////Answers///////
+Question 1: What operating system is Santa's laptop running ("OS Name")?
+Answer: Microsoft Windows 11 Pro
+
+Question 2: What was the password set for the new "backdoor" account?
+Answer: grinchstolechristmas
+
+Question 3: ......Before it is copied to the Desktop, what is the full path of the original file? 
+Answer: C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat
+
+Question 4: ......What is the name of this LOLbin?
+Answer: certutil.exe
+
+Question 5: ......What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?
+Answer: .github
+
+Question 6: ......What is the name of the file in this folder?
+Answer: bag_of_toys.zip
+
+Question 7: What is the name of the user that owns the SantaRat repository?
+Answer: Grinchiest
+
+Question 8: What is the name of the executable that installed a unique utility the actor used to collect the bag of toys?
+Answer: uharc-cmd-install.exe
+
+Question 9: What are the contents of these "malicious" files (coal, mold, and all the others)?
+Answer: Grinchmas
+
+Question 10: What is the password to the original bag_of_toys.uha archive?
+Answer: TheGrinchiestGrinchmasOfAll
+
+Question 11: How many original files were present in Santa's Bag of Toys?
+Answer: 228
