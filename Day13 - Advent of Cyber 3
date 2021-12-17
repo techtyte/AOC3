@@ -1,0 +1,39 @@
+Advent of Cyber 3 - Day 13 {Networking - They Lost The Plan!}
+
+Question 1: Complete the username: p.....
+{{Hint: net user}}
+
+Question 2: What is the OS version?
+{{Hint: systeminfo}}
+
+Question 3: What backup service did you find running on the system?
+{{Hint:
+wmic service get caption, description /format:list (This will make it much easier to sort through)
+Once you find the right one, do "wmic service where caption="(The backup's caption here)"}}
+
+Question 4: What is the path of the executable for the backup service you have identified?
+{{This is also revealed with the above command}}
+
+Question 5: Run the whoami command on the connection you have received on your attacking machine. What user do you have?
+{{The guide tells you how to set up the exploit. The backup program will probably say that it finished with errors, but that's fine}}
+
+Question 6: What is the content of the flag.txt file?
+{{type C:\Users\thegrinch\Documents\flag.txt}}
+
+Question 7: The Grinch forgot to delete a file where he kept notes about his schedule! Where can we find him at 5:30?
+{{The file is in the same folder}}
+
+
+
+
+
+
+
+\\\\\\\\\\Answers\\\\\\\\\\
+Question 1: pepper
+Question 2: 10.0.17763 N/A Build 17763
+Question 3: iperiussvc
+Question 4: C:\Program Files (x86)\Iperius Backup\IperiusService.exe
+Question 5: the-grinch-hack\thegrinch
+Question 6: THM-736635221
+Question 7: jazzercize
