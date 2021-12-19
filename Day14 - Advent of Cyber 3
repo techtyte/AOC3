@@ -11,7 +11,7 @@ Question 2: How many scripts do you see in the /home/thegrinch/scripts folder?
 Question 3: What are the five characters following $6$G in pepper's password hash?
 {{Hint:
 nano /home/thegrinch/scripts/loot.sh
-change the content of this file to read:
+change the content of this script to read:
 
 #!/bin/bash
 
@@ -21,8 +21,8 @@ Wait a few minutes and refresh the http://[machine IP]/admin page}}
 
 
 Question 4: What is the content of the flag.txt file on the Grinch's user’s desktop?
-{{Hint: Back in the loot.sh file, change "cat /etc/shadow" to be "cat /home/thegrinch/Desktop/flag.txt".
-Wait again and refresh the admin page.
+{{Hint: Back in the loot.sh script, change "cat /etc/shadow" to "cat /home/thegrinch/Desktop/flag.txt".
+Wait again and refresh the admin page.}}
 
 
 
