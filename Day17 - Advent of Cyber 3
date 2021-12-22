@@ -34,8 +34,14 @@ The answer is the one following "Account"
 Question 6: What is the Username for that access-key?
 {{Hint: It is the one listed after "Arn"}
 
+Question 7: There is an EC2 Instance in this account. Under the TAGs, what is the Name of the instance?
+{{Hint: aws ec2 describe-instances --output text --profile [profilename]
 
-
+Question 8: What is the database password stored in Secrets Manager?
+{{Hint}}
+aws secretsmanager list-secrets --profile [profilename]
+We have the secret ID, but the hint says we must change the region. Try:
+aws secretsmanager get-secret-value --secret-id HR-Password --profile [profilename] --region eu-north-1
 
 
 
@@ -49,3 +55,6 @@ Question 2: It's easy to get your elves data when you leave it so easy to find!
 Question 3: wp-backup.zip
 Question 4: AKIAQI52OJVCPZXFYAOI
 Question 5: 019181489476
+Question 6: ElfMcHR@bfc.com
+Question 7: HR-Portal
+Question 8: Winter2021!
