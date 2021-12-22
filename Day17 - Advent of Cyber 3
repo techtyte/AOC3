@@ -1,0 +1,51 @@
+Advent of Cyber 3 - Day 17 {Cloud - Elf Leaks}
+
+AWS (Amazon Web Services)
+
+Question 1: What is the name of the S3 Bucket used to host the HR Website announcement? 
+{{Hint: Right click on the HR image, inspect}}
+
+Question 2: What is the message left in the flag.txt object from that bucket?
+{{Hint: Replace "flyer.png" in the URL with "flag.txt"}}
+
+Question 3: What other file in that bucket looks interesting to you?
+{{Hint: Go to the bucket, https://s3.amazonaws.com/images.bestfestivalcompany.com/, and take a look around}}
+
+Question 4: What is the AWS Access Key ID in that file?
+{{Hint}}
+Append the name of the interesting file to the end of the URL (https://s3.amazonaws.com/images.bestfestivalcompany.com/theinterestingfile.whatever)
+Download it, and navigate to wp-config.php, until you see the line that reads:
+
+define('S3_UPLOADS_KEY', '[this is the key!]');
+
+Question 5: What is the AWS Account ID that access-key works for?
+{{Hint}}
+First, configure a profile with the keys:
+aws configure --profile [profilename]
+AWS Access Key: [the key that is listed on line 86 in wp-config.php]
+AWS Secret Access Key: [the key that is listed on line 87]
+Default region name: us-east-1
+default output format: [none]
+
+Then, run the command:
+aws sts get-caller-identity --profile [profilename]
+The answer is the one following "Account"
+
+Question 6: What is the Username for that access-key?
+{{Hint: It is the one listed after "Arn"}
+
+
+
+
+
+
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\Answers\\\\\\\\\\\\\\\\\\\\\\\
+Question 1: images.bestfestivalcompany.com
+Question 2: It's easy to get your elves data when you leave it so easy to find!
+Question 3: wp-backup.zip
+Question 4: AKIAQI52OJVCPZXFYAOI
+Question 5: 019181489476
