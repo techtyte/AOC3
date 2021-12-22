@@ -2,3 +2,49 @@ Advent of Cyber 3 - Day 16 {OSINT - Ransomware Madness}
 
 OSINT - Open Source Intelligence 
 
+
+Question 1: What is the operator's name?
+{{Use google translate}}
+
+Question 2: What social media platform is the username associated with?
+{{Hint}}
+I used sherlock for this one: https://github.com/sherlock-project/sherlock
+Follow installation instructions, and use the syntax:
+python3 sherlock.py grinchwho31
+
+
+Question 3: What is the cryptographic identifier associated with the operator?
+{{It's on his profile}}
+
+Question 4: What platform is the cryptographic identifier associated with?
+{{This is also included in the post}}
+
+Question 5: What is the bitcoin address of the operator?
+{{Click the link in the post}}
+
+Question 6: What platform does the operator leak the bitcoin address on? 
+{{Look at the linked accounts}}
+
+Question 7: What is the operator's personal email?
+{{Check out the commit history}}
+
+Question 8 : What is the operator's real name?
+{{This is also in the history}}
+
+
+
+
+
+
+
+
+
+\\\\\\\\\\\\\\Answers\\\\\\\\\\\\\
+Question 1: grinchwho31
+Question 2: twitter
+Question 3: 1GW8QR7CWW3cpvVPGMCF5tZz4j96ncEgrVaR
+Question 4: keybase.io
+Question 5: bc1q5q2w2x6yka5gchr89988p2c8w8nquem6tndw2f
+Question 6: github
+Question 7: DonteHeath21@gmail.com
+Question 8: Donte Heath
