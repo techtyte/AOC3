@@ -49,6 +49,21 @@ aws secretsmanager get-secret-value --secret-id HR-Password --profile [profilena
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \\\\\\\\\\\\\\\\\\\\\\Answers\\\\\\\\\\\\\\\\\\\\\\\
 Question 1: images.bestfestivalcompany.com
 Question 2: It's easy to get your elves data when you leave it so easy to find!
