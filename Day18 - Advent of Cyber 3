@@ -1,0 +1,34 @@
+Advent of Cyber 3 - Day 18 {Cloud - Playing With Containers}
+
+AWS Elastic Container Registry
+
+Question 1:  What command will list container images stored in your local container registry? 
+{{D _ _ _ _ _  I _ _ _ _ _ _}}
+
+Question 2: What command will allow you to save a docker image as a tar archive?
+{{D _ _ _ _ _ _  S _ _ _}}
+
+Question 3: What is the name of the file (including file extension) for the configuration, repository tags, and layer hash values stored in a container image?
+{{M _ _ _ _ _ _ _ . j _ _ _}}
+
+Question 4: What is the token value you found for the bonus challenge?
+{{Hint: in the config.hcl file, it is under the environmental variable, VAULT_TOKEN}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\\\\\\\\\\\\\\\Answers\\\\\\\\\\\\\\\
+
+Question 1: docker images
+Question 2: docker save
+Question 3: manifest.json
+Question 4: 7095b3e9300542edadbc2dd558ac11fa
