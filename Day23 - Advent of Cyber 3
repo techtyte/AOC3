@@ -1,0 +1,51 @@
+Advent of Cyber 3 - Day 23 {Blue Teaming - PowershELIF Magic}
+
+Windows Powershell
+
+Question 1: What command was executed as Elf McNealy to add a new user to the machine? 
+{{Hint: Look at Record ID 707}}
+
+Question 2: What user executed the PowerShell file to send the password.txt file from the administrator's desktop to a remote server?
+{{Hint: the new user}}
+
+Question 3: What was the IP address of the remote server? What was the port used for the remote connection? (format: IP,Port)
+{{Hint: In Advanced options, select the dropdown for the last box and pick "Show only events with the specified event description strings 
+(comma-delimited list, wildcard allowed) and type in *http* below it. This will help narrow it down greatly}}
+
+Question 4: What was the encryption key used to encrypt the contents of the text file sent to the remote server?
+{{Hint: $key = (New-Object System.Text.ASCIIEncoding).GetBytes("This is the answer!")
+
+Question 5: What application was used to delete the password.txt file?
+{{Hint: In the same event log, look for ".\"This is the answer.something!" -accepteula C:\Users\Administrator\desktop\password.txt}}
+
+Question 6: What is the date and timestamp the logs show that password.txt was deleted? (format: MM/DD/YYYY H:MM:SS PM)
+{{Hint: Back in advanced options, change *http* to *delete*}}
+
+Question 7: What were the contents of the deleted password.txt file?
+{{Hint: I started looking around Record #748 until I found one that began with CommandInvocation(Invoke-WebRequest): "Invoke-WebRequest"
+And noticed that the body in this event log had the encrypted value we are looking for.
+Click on "decryptor" on the Desktop, and copy and paste that value into $encrypter = "here!" 
+and add the key from Question 4 into $key = (New-Object System.Text.ASCIIEncoding).GetBytes("here!")
+Open PowerShell, navigate to the Desktop and execute decryptor
+"./decryptor.ps1"
+The output is the answer :)
+
+
+
+
+
+
+
+
+
+
+
+
+\\\\\\\\\\\\\\Answers\\\\\\\\\\\\\\\
+Question 1: Invoke-Nightmare
+Question 2: adm1n
+Question 3: 10.10.148.96,4321
+Question 4: j3pn50vkw21hhurbqmxjlpmo9doiukyb
+Question 5: sdelete.exe
+Question 6: 11/11/2021 7:29:27 PM
+Question 7: Mission Control: letitsnowletitsnowletitsnow
