@@ -1,0 +1,38 @@
+Advent of Cyber 3 - Day 24 {Post Exploitation - Learning From The Grinch}
+
+Password Cracking
+
+Question 1:  What is the username of the other user on the system? 
+{{Hint: e _ _ _ _}}
+
+Question 2: What is the NTLM hash of this user?
+{{Hint: It'll be listed under their name }}
+
+Question 3: What is the password for this user?
+{{Hint:}}
+On my own machine, I saved the hash into a txt file and cracked the password using John with this syntax:
+john --format=NT -w=/path/to/rockyou.txt hash.txt --pot=output.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\\\\\\\\\\\\\\\\Answers\\\\\\\\\\\\\\\\\\
+Question 1: emily
+Question 2: 8af326aa4850225b75c592d4ce19ccf5 
+Question 3: 1234567890
